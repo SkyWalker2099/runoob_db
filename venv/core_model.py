@@ -3,10 +3,27 @@ import jieba.posseg as posseg
 import jieba
 import gensim
 import logging
+import collections
 from collections import defaultdict
 import numpy as np
+import json
 
 stoplist = set('的 ？ ? 与 和 是 （ ）'.split())
+
+Answer = collections.namedtuple("Answer", "sim answer link")
+
+def build_all_model():
+    db = pymysql.connect(host = "localhost",
+                         user = "zzh",
+                         password = "123456",
+                         db = "runoob")
+    cursor = db.cursor()
+    sql = "select class from href_list group by class;"
+    cursor.execute(sql)
+    result = cursor.fetchall()
+    for i in result:
+        print(i[0])
+        build_model(i[0])
 
 def build_model(table_name):
     """
@@ -14,6 +31,8 @@ def build_model(table_name):
     :param text:
     :return:
     """
+    table_name = table_name.replace("/","_").replace(".","_")
+
     db = pymysql.connect(host = "localhost",
                          user = "zzh",
                          password = "123456",
@@ -47,9 +66,9 @@ def build_model(table_name):
     index = gensim.similarities.MatrixSimilarity(corpus_tfidf)
 
 
-    tfidf.save("MODELS/tfidf")
-    index.save("MODELS/index")
-    dictionary.save("MODELS/dic")
+    tfidf.save("MODELS/%s_tfidf"%table_name)
+    index.save("MODELS/%s_index"%table_name)
+    dictionary.save("MODELS/%s_dic"%table_name)
 
 def get_question(table_name, text):
     """
@@ -59,31 +78,55 @@ def get_question(table_name, text):
     :return:
     """
 
-    tfidf = gensim.models.TfidfModel.load("MODELS/tfidf")
-    index = gensim.similarities.MatrixSimilarity.load("MODELS/index")
-    dictionary = gensim.corpora.Dictionary.load("MODELS/dic")
+    tfidf = gensim.models.TfidfModel.load("MODELS/%s_tfidf"%table_name)
+    index = gensim.similarities.MatrixSimilarity.load("MODELS/%s_index"%table_name)
+    dictionary = gensim.corpora.Dictionary.load("MODELS/%s_dic"%table_name)
 
     text = dictionary.doc2bow(jieba.lcut(text))
 
     text_tfidf = tfidf[text]
     sims = index[text_tfidf]
+    print(sims)
 
-    postion  = np.where(sims == max(sims))
-    print(postion)
+
+    print("~~~"*30)
+
+    # postion  = np.where(sims == max(sims))
+    # print(postion)
+
+    positions = sims.argsort()[-3:]
+    for i in positions:
+        print(i)
+
     db = pymysql.connect(host = "localhost",
                          user = "zzh",
                          password = "123456",
                          db = "runoob")
     cursor = db.cursor()
 
-    cursor.execute("select * from %s where id = %s"%(table_name, postion[0][0]+1))
+    answers = []
 
-    result = cursor.fetchall()
-    print(result)
+    for postion in positions:
+        cursor.execute("select * from %s where id = %s"%(table_name, postion+1))
+        result = cursor.fetchall()
+        answer = Answer(str(sims[postion]),result[0][2],result[0][3])
+        print(postion)
+        print(result[0][1])
+        print(answer)
+        answers.append(answer)
+        print("~~~"*30)
     db.close()
 
+    a = json.dumps(answers)
+    # print(a)
+    return a
 
 
 if __name__ == '__main__':
 
-    get_question("ASP_NET","MVC编程模式是什么样的")
+    a = get_question("服务端","python 安装")
+    ans = json.loads(a)
+    print(type(ans))
+    for a in ans:
+        print(a)
+    # build_all_model()

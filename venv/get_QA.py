@@ -73,9 +73,7 @@ def f(item):
     article_intro = BeautifulSoup(etree.tostring(article_intro[0]))
     article_intro = article_intro.find(name="div", attrs={"class": "article-intro", "id": "content"})
 
-    q = re.compile(r'<h\d.*>(.*)</h\d>')
-    q1 = re.compile(r'<h\d>(.*)</h\d>')
-
+    p = re.compile('<[^>]+>')
 
     tag_list = _split(article_intro)
 
@@ -83,22 +81,24 @@ def f(item):
 
     for i in tag_list:
 
-        title  = re.findall(q,i)
-        if(title == None or len(title) == 0):
-            continue
-        if(title[0] == ""):
-            title[0] = re.findall(q1,i)[0]
+        # print(i)
+        part = BeautifulSoup(i)
+        # print("XXXX"*30)
+        title = list(part.find("body").children)[0]
+        # print(str(title))
+        title = p.sub("", str(title))
 
-        if(title[0] == ""):
-            continue
+        # print("~~~~"*30)
 
 
-        rowQ = [item[3],item[4],title[0]]
+        rowQ = [item[3],item[4],title]
         # print(rowQ)
 
-        print(rowQ)
+        # print(rowQ)
+
         # print(i)
         question = nlp_process.get_question_by_rowQ(rowQ)
+        # print(question)
         qa = QA(question, i)
         QAs.append(qa)
 
@@ -125,7 +125,7 @@ if __name__ == '__main__':
         sql2 = """select skill from href_list where class = "%s" group by skill;"""%class_[0]
         table_name = class_[0].replace(".", "_").replace("/", "_")
         cursor.execute("truncate table %s;"%table_name)
-        # sql2 = """select skill from href_list where class = "数据库" group by skill;"""
+        # sql2 = """select skill from href_list where class = "服务端" group by skill;"""
         print(sql2)
         cursor.execute(sql2)
         skills = cursor.fetchall()
@@ -133,7 +133,7 @@ if __name__ == '__main__':
         num = 1
         for skill in skills:
             sql3 = """select * from href_list where class = "%s" and skill = "%s";"""%(class_[0],skill[0])
-            # sql3 = """select * from href_list where class = "%s" and skill = "%s";"""%("数据库", skill[0])
+            # sql3 = """select * from href_list where class = "%s" and skill = "%s";"""%("服务端", "Python")
             print(sql3)
             cursor.execute(sql3)
             items = cursor.fetchall()
@@ -141,7 +141,14 @@ if __name__ == '__main__':
 
             insert_sql = """insert into %s (question ,answer, link) value ("%s","%s", "%s")"""
             for item in items:
-                print(item)
+                # try:
+                #     print("~~~~"*30)
+                #     print(item)
+                #     f(item)
+                #     print("~~~~"*30)
+                # except Exception as e:
+                #     print(repr(e))
+                # continue
                 # QA = f(item)
                 try:
 

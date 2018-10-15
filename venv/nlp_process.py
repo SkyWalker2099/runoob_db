@@ -91,7 +91,7 @@ def rule_3(line,pos_list,rowQ):
 
 
 
-def get_question_by_rowQ(rowQ):
+def get_question_by_rowQ1(rowQ):
     # print(rowQ)
     # print(rowQ)
     line = p.sub("",rowQ[-1]).replace("\n","")
@@ -118,8 +118,18 @@ def get_question_by_rowQ(rowQ):
 
     return question
 
+def get_question_by_rowQ(rowQ):
+    question = []
+    for i in rowQ:
+        i = i.lower().replace("\n","")
+        for j in jieba.lcut(i):
+            if(j not in question):
+                question.append(j)
+
+    q = "".join(question).replace("²Î¿¼Êé²á","")
 
 
+    return q
 
 if __name__ == '__main__':
     with open("rowQ.txt","r") as f:

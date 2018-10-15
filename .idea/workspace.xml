@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cb81528-57e7-408a-b2dd-f4a8cf3adccd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/venv/connect_to_server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/core_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/core_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/get_QA.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/get_QA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/nlp_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/nlp_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,49 +19,64 @@
     <session id="566170445">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="18" />
+          <entry key="project.open.time.0" value="5" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="5" />
-          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.5" value="8" />
           <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="1" />
-          <entry key="py" value="36" />
+          <entry key="py" value="38" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="36" />
+          <entry key="Python" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="10324" />
+          <entry key="py" value="13163" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="10324" />
+          <entry key="Python" value="13163" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/get_QA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
+            <state relative-caret-position="247">
+              <caret line="127" column="24" selection-start-line="127" selection-start-column="24" selection-end-line="127" selection-end-column="24" />
+              <folding>
+                <element signature="e#1#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,10 +84,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/core_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            <state relative-caret-position="315">
+              <caret line="102" selection-start-line="102" selection-end-line="103" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
+                <marker date="1539505089346" expanded="true" signature="301:676" ph="..." />
               </folding>
             </state>
           </provider>
@@ -76,12 +97,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/nlp_process.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="2432">
+              <caret line="128" column="41" selection-start-line="128" selection-start-column="41" selection-end-line="128" selection-end-column="41" />
               <folding>
                 <element signature="e#23#35#0" expanded="true" />
-                <marker date="1538977555170" expanded="true" signature="916:1637" ph="..." />
-                <marker date="1538977555170" expanded="true" signature="1668:1673" ph="..." />
+                <marker date="1539430723981" expanded="true" signature="916:1637" ph="..." />
+                <marker date="1539430723981" expanded="true" signature="1669:1674" ph="..." />
+                <marker date="1539430723981" expanded="true" signature="2393:2634" ph="..." />
               </folding>
             </state>
           </provider>
@@ -90,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/nn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="836">
+              <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
               <folding>
                 <element signature="e#23#35#0" expanded="true" />
                 <marker date="1538977555162" expanded="true" signature="862:867" ph="..." />
@@ -110,14 +132,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/test.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/venv/connect_to_server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1653">
-              <caret line="95" selection-start-line="95" selection-end-line="95" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="380">
+              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -158,6 +177,9 @@
       <find>参考手册</find>
       <find>groupby</find>
       <find>分享</find>
+      <find>python</find>
+      <find>python安装</find>
+      <find>Python安装</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,25 +191,27 @@
         <option value="$PROJECT_DIR$/venv/get_html.py" />
         <option value="$PROJECT_DIR$/venv/line_classes.py" />
         <option value="$PROJECT_DIR$/venv/line_class.py" />
-        <option value="$PROJECT_DIR$/venv/core_model.py" />
         <option value="$PROJECT_DIR$/venv/nn.py" />
         <option value="$PROJECT_DIR$/venv/nlp_process.py" />
-        <option value="$PROJECT_DIR$/venv/test.py" />
         <option value="$PROJECT_DIR$/venv/get_QA.py" />
+        <option value="$PROJECT_DIR$/venv/core_model.py" />
+        <option value="$PROJECT_DIR$/venv/test.py" />
+        <option value="$PROJECT_DIR$/venv/connect_to_server.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="67" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="993" />
     <option name="y" value="25" />
     <option name="width" value="927" />
-    <option name="height" value="1053" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,7 +228,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -228,7 +251,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.get_QA">
+  <component name="RunManager" selected="Python.connect_to_server">
+    <configuration name="connect_to_server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="runoob_db" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/connect_to_server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="core_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="runoob_db" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -263,27 +307,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/get_QA.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="nlp_process" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="runoob_db" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/nlp_process.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -336,18 +359,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.get_QA" />
-      <item itemvalue="Python.nlp_process" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.nn" />
       <item itemvalue="Python.core_model" />
+      <item itemvalue="Python.connect_to_server" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.connect_to_server" />
+        <item itemvalue="Python.core_model" />
         <item itemvalue="Python.get_QA" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.nn" />
-        <item itemvalue="Python.core_model" />
-        <item itemvalue="Python.nlp_process" />
       </list>
     </recent_temporary>
   </component>
@@ -374,15 +397,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="927" height="1053" extended-state="4" />
+    <frame x="993" y="25" width="927" height="1055" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3178808" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0033112583" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49945414" weight="0.9119227" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49945414" weight="0.30967742" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4726101" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -395,6 +418,25 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12827511" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49945414" visible="true" weight="0.36129034" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4726101" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50054586" side_tool="true" weight="0.42857143" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32975295" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -537,39 +579,23 @@
     <entry file="file:///usr/local/lib/python3.6/dist-packages/django/bin/django-admin.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/get_QA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/core_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/nlp_process.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="2432">
+          <caret line="128" column="41" selection-start-line="128" selection-start-column="41" selection-end-line="128" selection-end-column="41" />
           <folding>
             <element signature="e#23#35#0" expanded="true" />
-            <marker date="1538977555170" expanded="true" signature="916:1637" ph="..." />
-            <marker date="1538977555170" expanded="true" signature="1668:1673" ph="..." />
+            <marker date="1539430723981" expanded="true" signature="916:1637" ph="..." />
+            <marker date="1539430723981" expanded="true" signature="1669:1674" ph="..." />
+            <marker date="1539430723981" expanded="true" signature="2393:2634" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/nn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="836">
+          <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
           <folding>
             <element signature="e#23#35#0" expanded="true" />
             <marker date="1538977555162" expanded="true" signature="862:867" ph="..." />
@@ -585,13 +611,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/core_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="102" selection-start-line="102" selection-end-line="103" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1539505089346" expanded="true" signature="301:676" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/get_QA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="127" column="24" selection-start-line="127" selection-start-column="24" selection-end-line="127" selection-end-column="24" />
+          <folding>
+            <element signature="e#1#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/venv/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1653">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="464">
+          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/connect_to_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
         </state>
       </provider>
     </entry>
